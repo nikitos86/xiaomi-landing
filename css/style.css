@@ -1,0 +1,261 @@
+@font-face {
+  font-family: 'BlissPro';
+  src: local('BlissPro-Medium'),
+  url('../fonts/BlissPro-Medium.woff2') format('woff2'),
+  url('../fonts/BlissPro-Medium.woff') format('woff');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BlissPro';
+  src: local('BlissPro-Bold'),
+  url('../fonts/BlissPro-Bold.woff2') format('woff2'),
+  url('../fonts/BlissPro-Bold.woff') format('woff');
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BlissPro';
+  src: local('BlissPro-ExtraBold'),
+  url('../fonts/BlissPro-ExtraBold.woff2') format('woff2'),
+  url('../fonts/BlissPro-ExtraBold.woff') format('woff');
+  font-display: swap;
+  font-weight: 800;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul,li {
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+body {
+  min-width: 320px;
+  font-family: 'BlissPro', sans-serif;
+  font-style: normal;
+  background-color: #141414;
+}
+
+/* base */
+.container {
+  max-width: 1440px;
+  padding: 0 100px;
+  margin: 0 auto;
+}
+
+.btn {
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  border-radius: 27px;
+  background-color: #f58d56;
+  color: #fefefe;
+}
+
+.wrapper-bgcolor {
+  background: linear-gradient(132.05deg, #F58D56 -17.38%, #112120 78.4%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+
+/* header */
+.header {
+  padding: 59px 0 85px 0;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 70px;
+}
+
+.nav__link {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* hero */
+.hero {
+  padding-bottom: 202px;
+}
+
+.hero__content {
+  position: relative;
+  width: 100%;
+}
+
+.hero__content::before {
+  content: "";
+  position: absolute;
+  bottom: -45%;
+  right: -10%;
+  width: 904px;
+  height: 904px;
+  background: url('../img/hero-bg.png') center / contain no-repeat;
+  z-index: 1;
+}
+
+.hero__descr {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero__top-btn {
+  padding: 14px 33px;
+  margin-bottom: 43px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  border-radius: 15px;
+  background-color: #f55656;
+}
+
+.hero__title {
+  margin-bottom: 43px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title__top,
+.title__center,
+.title__bottom {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.title__top {
+  margin-bottom: 25px;
+}
+
+.title__center {
+  font-size: 98px;
+  margin-bottom: 35px;
+}
+
+.hero__text {
+  max-width: 519px;
+  margin-bottom: 57px;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: .5;
+}
+
+.hero__inner-btn-price {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero__bottom-btn {
+  padding: 30px 47px;
+  margin-right: 75px;
+}
+
+.hero__new-price {
+  padding: 0 69px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 27px;
+  background-color: #f55656;
+  transform: skewX(-10deg);
+}
+
+.hero__new-price-number {
+  display: inline-block;
+  font-weight: 800;
+  font-size: 86px;
+  line-height: 103px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.hero__new-price-rubles {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.hero__old-price {
+  position: absolute;
+  top: -50%;
+  right: 0;
+  padding: 10px 60px 0 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 17px;
+  background-color: #fff;
+  transform: skewX(-10deg);
+}
+
+.hero__old-price-number {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: uppercase;
+  color: #000;
+}
