@@ -86,6 +86,11 @@ body {
   border-radius: 27px;
   background-color: #f58d56;
   color: #fefefe;
+  transition: color .4s ease-in-out;
+}
+
+.btn:hover {
+  color: #112120;
 }
 
 .wrapper-bgcolor {
