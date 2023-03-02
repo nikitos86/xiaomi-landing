@@ -25,10 +25,32 @@
    <meta name="msapplication-TileImage" content="fav-icon/ms-icon-144x144.png">
    <meta name="theme-color" content="#ffffff">
    <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="wrapper-bgcolor">
+    <div id="first-modal" class="modal">
+      <div class="modal__content">
+        <h2 class="modal__content-title">
+          Успей приобрести по&nbsp;акционному предложению
+        </h2>
+        <div class="modal__content-inner-price">
+          <span class="modal__content-old-price">
+            <strike>3200руб</strike>
+          </span>
+          <span class="modal__content-price">
+            2500
+          </span>
+          <span class="modal__content-currency">
+            руб
+          </span>
+        </div>
+        <button id="close-first-modal" class="modal__content-btn btn">
+          Купить Сейчас
+        </button>
+      </div>
+    </div>
     <header class="header">
      <div class="container">
        <div class="header__content">
@@ -64,7 +86,7 @@
           <div class="container">
             <div class="hero__content">
               <div class="hero__descr">
-                <button class="hero__top-btn">
+                <button id="open-modal-btn" class="hero__top-btn">
                   Акционное предложение
                 </button>
                 <h1 class="hero__title title">
@@ -129,25 +151,100 @@
                 Купить Сейчас
               </button>
             </div>
-            <div class="about__slider">
-              <div class="about__slider-content">
-                <div class="about__slider-card about__slider-card_card-1">
-                  <img class="about__slider-card-img" src="img/slide-1.png" alt="часы">
+            <div class="about__slider swiper">
+              <div class="about__slider-content swiper-wrapper">
+                <div class="about__slider-card about__slider-card_card-1 swiper-slide" >
+                  <picture>
+                    <source srcset="img/slide-1.webp" type="image/webp">
+                    <img class="about__slider-card-img" src="img/slide-1.png" alt="часы">
+                  </picture>
                 </div>
-                <div class="about__slider-card about__slider-card_card-2">
-                  <img class="about__slider-card-img" src="img/slide-2.png" alt="часы">
+                <div class="about__slider-card about__slider-card_card-2 swiper-slide">
+                  <picture>
+                    <source srcset="img/slide-2.webp" type="image/webp">
+                    <img class="about__slider-card-img" src="img/slide-2.png" alt="часы">
+                  </picture>
                 </div>
-                <div class="about__slider-card about__slider-card_card-3">
-                  <img class="about__slider-card-img" src="img/slide-2.png" alt="часы">
+                <div class="about__slider-card about__slider-card_card-3 swiper-slide">
+                  <picture>
+                    <source srcset="img/slide-2.webp" type="image/webp">
+                    <img class="about__slider-card-img" src="img/slide-2.png" alt="часы">
+                  </picture>
                 </div>
               </div>
+              <div class="swiper-button-prev" tabindex="0" aria-label="кнопка перелистования изоброжения"></div>
             </div>
           </div>
         </div>
       </section>
       <section id="specifications" class="specifications">
         <div class="container">
-
+          <div class="specifications__list">
+            <div class="specifications__item item">
+              <div class="item__invention">
+                <picture>
+                  <source srcset="img/invention-1.webp" type="image/webp">
+                  <img class="item__invention-img" src="img/invention-1.png" alt="изоброжение">
+                </picture>
+              </div>
+              <div class="item__descr">
+                <h3 class="item__title">
+                  Измерение уровня кислорода в крови
+                </h3>
+                <p class="item__text">
+                  Xiaomi Band 7 оснащен функцией измерения уровня кислорода в крови благодаря наличию датчика SpO2.
+                </p>
+              </div>
+            </div>
+            <div class="specifications__item item">
+              <div class="item__invention">
+                <picture>
+                  <source srcset="img/invention-2.webp" type="image/webp">
+                  <img class="item__invention-img" src="img/invention-2.png" alt="изоброжение">
+                </picture>
+              </div>
+              <div class="item__descr item__descr_start">
+                <h3 class="item__title item__title_end">
+                  100 настраиваемых циферблатов
+                </h3>
+                <p class="item__text item__text_end">
+                  В приложение встроено более 100  циферблатов. также впервые поддерживается настройку функции циферблата – циферблат не только красив, но и прост в использовании..
+                </p>
+              </div>
+            </div>
+            <div class="specifications__item item">
+              <div class="item__invention">
+                <picture>
+                  <source srcset="img/invention-3.webp" type="image/webp">
+                  <img class="item__invention-img" src="img/invention-3.png" alt="изоброжение">
+                </picture>
+              </div>
+              <div class="item__descr">
+                <h3 class="item__title">
+                  Влагозащита 50 метров
+                </h3>
+                <p class="item__text">
+                  Фитнес-браслет имеет защиту от попадания воды по стандарту 5ATM.  С Mi Band 7 можно спокойно нырять под воду глубину до 50 метров. Принимайте душ или ходите под дождем, не беспокоясь о вашем браслете.
+                </p>
+              </div>
+            </div>
+            <div class="specifications__item item">
+              <div class="item__invention">
+                <picture>
+                  <source srcset="img/invention-4.webp" type="image/webp">
+                  <img class="item__invention-img" src="img/invention-4.png" alt="изоброжение">
+                </picture>
+              </div>
+              <div class="item__descr item__descr_start">
+                <h3 class="item__title item__title_end">
+                  30 спортивных режимов
+                </h3>
+                <p class="item__text item__text_end">
+                  Xiaomi Band 7 поддерживают 30 спортивных режимов с функцией обнаружения и определения вида тренировки: бег, ходьба, велосипед, футбол и теннис и многое другое.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="and-also">
@@ -166,5 +263,7 @@
 
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
