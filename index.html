@@ -25,118 +25,114 @@
    <meta name="msapplication-TileImage" content="fav-icon/ms-icon-144x144.png">
    <meta name="theme-color" content="#ffffff">
    <link rel="stylesheet" href="css/normalize.css">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="wrapper-bgcolor">
     <div id="first-modal" class="modal">
-      <div class="modal__content">
-        <h2 class="modal__content-title">
+      <div class="modal__content card-buy">
+        <h2 class="card-buy-title">
           Успей приобрести по&nbsp;акционному предложению
         </h2>
-        <div class="modal__content-inner-price">
-          <span class="modal__content-old-price">
-            <strike>3200руб</strike>
+        <div class="card-buy-inner-price">
+          <span class="card-buy-old-price">
+            3200руб
           </span>
-          <span class="modal__content-price">
+          <span class="card-buy-price">
             2500
           </span>
-          <span class="modal__content-currency">
+          <span class="card-buy-currency">
             руб
           </span>
         </div>
-        <button id="close-first-modal" class="modal__content-btn btn">
+        <button id="close-first-modal" class="card-buy-btn btn">
           Купить Сейчас
         </button>
       </div>
     </div>
     <header class="header">
-     <div class="container">
-       <div class="header__content">
-         <div class="header__logo">
-          <a href="#">
-            <img src="img/logo.svg" alt="Логотип">
-          </a>
-         </div>
-         <nav class="header__nav nav">
-           <ul class="nav__list">
-             <li class="nav__item">
-              <a href="#about" class="nav__link">
-                Xiaomi band 7
-              </a>
-            </li>
-             <li class="nav__item">
-              <a href="#specifications" class="nav__link">
-                Характеристики
-              </a>
-            </li>
-             <li class="nav__item">
-              <a href="#buy" class="nav__link">
-                Купить
-              </a>
-            </li>
-           </ul>
-         </nav>
-       </div>
+      <div class="container">
+        <div class="header__content">
+          <div id="top" class="header__logo">
+            <a href="#">
+              <img src="img/logo.svg" alt="Логотип">
+            </a>
+          </div>
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#about" class="nav__link">
+                  Xiaomi band 7
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#specifications" class="nav__link">
+                  Характеристики
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#buy" class="nav__link">
+                  Купить
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
      </div>
     </header>
     <main class="main">
-        <section class="hero">
-          <div class="container">
-            <div class="hero__content">
-              <div class="hero__descr">
-                <button id="open-modal-btn" class="hero__top-btn">
-                  Акционное предложение
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__descr">
+              <button id="open-modal-btn" class="hero__top-btn">
+                Акционное предложение
+              </button>
+              <h1 class="hero__title title">
+                <span class="title__top">
+                  Xiaomi Band 7
+                </span>
+                <span class="title__center">
+                  “Большие”
+                </span>
+                <span class="title__bottom">
+                  изменения
+                </span>
+              </h1>
+              <p class="hero__text">
+                Самым ожидаемым продукт Xiaomi
+                в 2022 году
+              </p>
+              <div class="hero__inner-btn-price">
+                <button class="hero__bottom-btn btn">
+                  Купить Сейчас
                 </button>
-                <h1 class="hero__title title">
-                  <span class="title__top">
-                    Xiaomi Band 7
+                <div class="hero__new-price">
+                  <span class="hero__new-price-number">
+                    2500
                   </span>
-                  <span class="title__center">
-                    “Большие”
+                  <span class="hero__new-price-rubles">
+                    руб
                   </span>
-                  <span class="title__bottom">
-                    изменения
+                </div>
+                <div class="hero__old-price">
+                  <span class="hero__old-price-number">
+                    3200
                   </span>
-                </h1>
-                <p class="hero__text">
-                  Самым ожидаемым продукт Xiaomi
-                  в 2022 году
-                </p>
-                <div class="hero__inner-btn-price">
-                  <button class="hero__bottom-btn btn">
-                    Купить Сейчас
-                  </button>
-                  <div class="hero__new-price">
-                    <span class="hero__new-price-number">
-                      2500
-                    </span>
-                    <span class="hero__new-price-rubles">
-                      руб
-                    </span>
-                  </div>
-                  <div class="hero__old-price">
-                    <span class="hero__old-price-number">
-                      <strike>
-                        3200
-                      </strike>
-                    </span>
-                    <span class="hero__old-price-rubles">
-                      руб
-                    </span>
-                  </div>
+                  <span class="hero__old-price-rubles">
+                    руб
+                  </span>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
       <section id="about" class="about">
         <div class="container">
           <div class="about__content">
             <div class="about__descr">
-              <h2 class="about__descr-title section-title">
+              <h2 class="about__descr-title">
                 <span class="about__descr-title-small">
                   Новая версия популярного
                 </span>
@@ -191,7 +187,7 @@
                 <h3 class="item__title">
                   Измерение уровня кислорода в крови
                 </h3>
-                <p class="item__text">
+                <p class="item__text text">
                   Xiaomi Band 7 оснащен функцией измерения уровня кислорода в крови благодаря наличию датчика SpO2.
                 </p>
               </div>
@@ -207,7 +203,7 @@
                 <h3 class="item__title item__title_end">
                   100 настраиваемых циферблатов
                 </h3>
-                <p class="item__text item__text_end">
+                <p class="item__text item__text_end text">
                   В приложение встроено более 100  циферблатов. также впервые поддерживается настройку функции циферблата – циферблат не только красив, но и прост в использовании..
                 </p>
               </div>
@@ -223,7 +219,7 @@
                 <h3 class="item__title">
                   Влагозащита 50 метров
                 </h3>
-                <p class="item__text">
+                <p class="item__text text">
                   Фитнес-браслет имеет защиту от попадания воды по стандарту 5ATM.  С Mi Band 7 можно спокойно нырять под воду глубину до 50 метров. Принимайте душ или ходите под дождем, не беспокоясь о вашем браслете.
                 </p>
               </div>
@@ -239,7 +235,7 @@
                 <h3 class="item__title item__title_end">
                   30 спортивных режимов
                 </h3>
-                <p class="item__text item__text_end">
+                <p class="item__text item__text_end text">
                   Xiaomi Band 7 поддерживают 30 спортивных режимов с функцией обнаружения и определения вида тренировки: бег, ходьба, велосипед, футбол и теннис и многое другое.
                 </p>
               </div>
@@ -249,18 +245,92 @@
       </section>
       <section class="and-also">
         <div class="container">
-
+          <h2 class="and-also__title">
+            А также
+          </h2>
+          <div class="and-also__cards-grid">
+            <div class="and-also__card">
+              <picture>
+                <source srcset="img/card-1.webp" type="image/webp">
+                <img class="ando-also__card-img" src="img/card-1.png" alt="дополнительные характеристики">
+              </picture>
+            </div>
+            <div class="and-also__card">
+              <picture>
+                <source srcset="img/card-2.webp" type="image/webp">
+                <img class="ando-also__card-img" src="img/card-2.png" alt="дополнительные характеристики">
+              </picture>
+            </div>
+            <div class="and-also__card">
+              <picture>
+                <source srcset="img/card-3.webp" type="image/webp">
+                <img class="ando-also__card-img" src="img/card-3.png" alt="дополнительные характеристики">
+              </picture>
+            </div>
+            <div class="and-also__card">
+              <picture>
+                <source srcset="img/card-4.webp" type="image/webp">
+                <img class="ando-also__card-img" src="img/card-4.png" alt="дополнительные характеристики">
+              </picture>
+            </div>
+          </div>
         </div>
       </section>
       <section id="buy" class="buy">
         <div class="container">
-
+          <div class="buy__wrapper-content">
+            <div class="buy__bg-content"></div>
+            <div class="buy__content card-buy">
+              <h2 class="card-buy-title">
+                Успей приобрести по&nbsp;акционному предложению
+              </h2>
+              <div class="card-buy-inner-price">
+                <span class="card-buy-old-price">
+                  3200руб
+                </span>
+                <span class="card-buy-price">
+                  2500
+                </span>
+                <span class="card-buy-currency">
+                  руб
+                </span>
+              </div>
+              <button class="card-buy-btn btn">
+                Купить Сейчас
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
-
+        <div class="footer__content">
+          <div class="footer__logo">
+            <a href="#top">
+              <img src="img/logo.svg" alt="Логотип">
+            </a>
+           </div>
+           <nav class="footer__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+               <a href="#about" class="nav__link">
+                 Xiaomi band 7
+               </a>
+             </li>
+              <li class="nav__item">
+               <a href="#specifications" class="nav__link">
+                 Характеристики
+               </a>
+             </li>
+              <li class="nav__item">
+               <a href="#buy" class="nav__link">
+                 Купить
+               </a>
+             </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

@@ -17,6 +17,28 @@ window.addEventListener('keydown', (e) => {
   }
 })
 
+document.querySelector('#first-modal .modal__content').addEventListener('click', event => {
+  event.isClickWithInModal = true;
+})
+
+document.getElementById('first-modal').addEventListener('click', event => {
+  if (event.isClickWithInModal) return;
+  event.currentTarget.classList.remove('open');
+})
+
+// smooth scrolling
+const anchors = document.querySelectorAll('a[href*="#"]');
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', (e) => {
+    e.preventDefault();
+    const blockId = anchor.getAttribute('href');
+    document.querySelector('' + blockId).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
 
 // swiper
 const swiper = new Swiper('.swiper', {
